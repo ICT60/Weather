@@ -7,6 +7,7 @@ namespace Weather
     {
         public static MainForm MainForm { get; set; }
         public static SettingForm SettingForm { get; set; }
+        public static AboutForm AboutForm { get; set; }
 
         [STAThread]
         static void Main()
@@ -16,6 +17,7 @@ namespace Weather
 
             MainForm = new MainForm();
             SettingForm = new SettingForm();
+            AboutForm = new AboutForm();
 
             Application.Run(MainForm);
         }

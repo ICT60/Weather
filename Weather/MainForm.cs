@@ -23,16 +23,14 @@ namespace Weather
             Program.SettingForm.LoadSetting();
         }
 
-        void Initialize()
-        {
-            respond = new Respond();
-            request = new Request();
-            lblWeather.Text = string.Empty;
-        }
-
         void settingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.SettingForm.ShowDialog();
+        }
+
+        void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.AboutForm.ShowDialog();
         }
 
         async void btnSync_Click(object sender, EventArgs e)
@@ -58,6 +56,13 @@ namespace Weather
             {
                 NotifyErrorInUI();
             }
+        }
+
+        void Initialize()
+        {
+            respond = new Respond();
+            request = new Request();
+            lblWeather.Text = string.Empty;
         }
 
         async Task<Image> GetWeatherIcon(string icon)

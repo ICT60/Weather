@@ -9,3 +9,7 @@
 - Get current weather data api key from : [Open Weather Map](https://openweathermap.org/api)
 - Use api key in app setting and press "sync" to show a current weather.
 
+# Dependencies
+- .Net 4.5
+- [Json.Net](https://www.newtonsoft.com/json)
+
